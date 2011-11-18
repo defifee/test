@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+	 <title>HTML5 Grundstruktur</title>
+
+  <!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".code").hide();
+   $("#button").text("Code zeigen");
+ $("#button").click(function () {
+	
+	$(".code").slideToggle("slow");
+	
+	  $("#button").text($("#button").text() == 'Code verstecken' ? 'Code zeigen' : 'Code verstecken');
+	    return false;
+      });
+});
+</script>
+	    
+	      <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />
+
+  </head>
+  
+
+ <div class="page"> 
+			
+	
+      <header>
+			  <nav>
+        <ul class="navlist horizontal">
+            <li><a href="html5.html">html5-Elemente</a></li>
+            <li><a href="module.html">Module</a></li>
+            <li><a href="lists.html">Listen</a></li>
+            <li><a href="forms.html">Formulare</a></li>
+            <li><a href="headings.html">Überschriften</a></li>
+        </ul>
+        
+    </nav>		
+                 <hgroup>
+                 <h1>HTML5-Elemente</h1>
+                 <h2>Das header-Element</h2>
+               </hgroup>
+	<button id="button">toggle</button>
+	
+	<div class="code">
+	    &lt;hgroup&gt; 
+                 &lt;h1&gt; HTML5-Elemente&lt;/h1&gt; 
+                 &lt;h2&gt; Das header-Element&lt;/h2&gt; 
+               &lt;/hgroup&gt; 
+	</div>
+                <p>Das <a href="http://html5doctor.com/the-header-element/">Header-Element</a> beinhaltet einführende Inhalte wie Überschriften, Navigation und Logo</p>
+                <p>headers können mehrfach auf einer Seite auftauchen.</p>
+        
+				
+                
+                   <div id="SEARCH">
+                            <form action="/suche.html?no_cache=1" method="post" enctype="multipart/form-data">
+                                    <input name="sword" type="search" id="SEARCHFIELD" size="10" placeholder="Suche" />
+                                    <input class="" name="SEARCH_SUBMIT" type="submit"  value="Suchen" />
+                                  
+                         	 </form>
+                                    
+                        
+    				</div><!--end SEARCH -->
+                
+                 
+          
+              			<p>Das <a href="http://html5doctor.com/nav-element/">nav-Element</a> enthält Links zu anderen Seiten und ist in der Regel die Hauptnavigation der Seite.</p>
+                        <p>Nur wichtige Navigationselemente und nicht alle Gruppen von Links sollten in ein nav integriert werden.</p>
+   		 <nav role="navigation">
+         <h2>Das nav-Element</h2>
+   		
+                	<ul class="navlist horizontal">
+                          <li><a href="">Meta1</a></li>
+                            <li><a href="">Meta2 </a></li>
+                            <li><a href="">Meta3</a></li>
+			</ul>
+   					
+		</nav>	
+                
+            
+            	
+	
+   	</header><!--end HEADER -->
+   			
+            
+	    <div class="content">
+	   
+            <div class="main">
+            
+          <div id="">
+    <h2>Das section-Element</h2>
+              <p>Mit section können Dokumente inhaltlich in Abschnitte unterteilt werden, wie z.B. in Kapitel, die eine eigene Überschrift haben könnten. Es sollte nie allein aus Styling-Gründen verwendet werden. </p>
+              
+             <h2>Beispiel section für Frequently Asked Questions</h2> 
+             <section>
+             	<h1>Allgemeines</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+             </section>
+             <section>
+             	<h1>Installation</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+             </section>
+             <section>
+             	<h1>Fehlerbehandlung</h1>
+                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+             </section>
+  <h2>Das article-Element</h2>
+  <p><a href="http://html5doctor.com/the-article-element/">article</a> beschreibt in sich geschlossene Inhalte innerhalb eines Dokuments wie z.B. Blog-Posts, News-Artikel.</p>
+  <article>
+  		<h1>HTML5</h1>
+        <p>
+        HTML5 ist eine textbasierte Auszeichnungssprache zur Strukturierung und semantischen Auszeichnung von Inhalten wie Texten, Bildern und Hyperlinks in Dokumenten. Sie soll die Nachfolge von HTML4 antreten...
+        </p>
+        <p>Auszug aus <a href="http://de.wikipedia.org/wiki/HTML5">Wikipedia Artikel</a></p>
+  </article>
+  
+  <h2>Das aside-Element</h2>
+  <p>aside wird für Inhalte verwendet, die nur indirekt mit dem Rest der Seite zusammenhängen, z.B. Links oder Werbung.</p>
+  <p>Innerhalb des article-Elements beschreibt aside Inhalte, die den article-Inhalt weiter ergänzen, wie z.B. ein Interview, Zitat oder eine Definition.</p>
+    <article>
+  		<h1>HTML5</h1>
+        <p>
+        HTML5 ist eine textbasierte Auszeichnungssprache zur Strukturierung und semantischen Auszeichnung von Inhalten wie Texten, Bildern und Hyperlinks in Dokumenten. Sie soll die Nachfolge von HTML4 antreten...
+        </p>
+        <p>Auszug aus <a href="http://de.wikipedia.org/wiki/HTML5">Wikipedia Artikel</a></p>
+        
+        <aside>
+        <h2>Links zum Thema</h2>
+        <ul>
+          <li><a href="http://diveintohtml5.info/">Dive Into HTML5</a></li>
+          <li><a href="http://html5doctor.com">HTML5 Doctor</a></li>
+          <li><a href="http://html5.validator.nu/">HTML5 Validator</a></li>
+        </ul>
+        
+        </aside>
+  </article>
+  
+  <h2>Figure und figcaption</h2>
+  	<p>In einem figure-Element können Bilder, Grafiken, Codebeispiele, Diagramme stehen, die den Inhalt ergänzen und überall im Dokument stehen könnten, ohne den Inhalt zu verändern. Eine reine Bildergalerie erlaubt aber kein figure-Element.</p>
+    
+    <p>figcaption dient zur Beschreibung des figure-Elements und kann am Anfang oder Ende von figure stehen.</p>
+  <div id="FORMULAR">  
+   <h2>input-Elemente</h2>
+   <p>Mit den neuen input type-Zuständen search, email, telephone und url können moderne Browser die Eingabe von Nutzerdaten bereits im passenden Format zulassen. Mit url und email kann sogar eine Validierung der Eingabe erfolgen. </p>
+    <form method="post" action="action.php">  
+        <label for="name">Name: <span class="required">*</span></label>  
+        <input type="text" id="name" name="name" value="" placeholder="Vorname Name" required="required" autofocus="autofocus" />  
+  
+        <label for="email">Email: <span class="required">*</span></label>  
+        <input type="email" id="email" name="email" value="" placeholder="beispiel@site.com" required="required" />  
+  
+  		 <label for="url">URL: <span class="required">*</span></label>  
+        <input type="url" id="url" name="url" value=""  required="required" />  
+        
+        
+        <label for="telefon">Telefon: </label>  
+        <input type="tel" id="telefon" name="telefon" value="" />  
+  
+        <label for="auswahl">Auswahl: </label>  
+        <select id="auswahl" name="auswahl">  
+            <option value="auswahl1">wahl 1</option>  
+            <option value="auswahl2">wahl 2</option>  
+            <option value="auswahl3">wahl 3</option>  
+        </select>  
+        
+          <label for="radio1">Auswahl 1 </label>  
+           <input type="radio" id="radio1"  value="" />  
+        
+         <label for="radio2">Auswahl 1 </label>  
+           <input type="radio" id="radio2"  value="" />  
+  
+  			        <label for="check">Auswahl 3 </label>  
+           <input type="checkbox" id="check"  value="" />  
+           
+           
+        <label for="message">Nachricht: <span class="required">*</span></label>  
+        <textarea id="message" name="message" placeholder="Ihre Nachricht sollte länger als 20 Zeichen sein" required="required" data-minlength="20"></textarea>  
+  
+        <span id="loading"></span>  
+        <input type="submit" value="Absenden" class="" />  
+        <p id="pflichtfeld">Mit <span class="required">*</span> gekennzeichnetes Feld ist ein Pflichtfeld</p>  
+    </form>  
+    
+    <a class="simpleButton" href="#">Button 1</a>
+    <button>Button</button>
+    <a href="https://developer.mozilla.org/de/CSS/box-shadow" class="iconLink">iconLink</a>
+</div> 
+  
+  
+  
+  
+</div>
+
+
+            
+   			<footer>
+            <h2>Das Footer-Element</h2>
+            <p><a href="http://html5doctor.com/the-footer-element-update/">footer</a> enhält abschließende Angaben eines Dokuments. Genauso wie header kann es mehrfach auf einer Seite auftauchen, z.B. kann ein article-Element einen abschließenden footer enthalten.</p>
+						<ul id="FOOTERMENU" class="horizontallist">
+							  <li><a href="" class="">Sitemap</a></li>
+							  <li><a href="" class="">Impressum</a></li>
+							  <li><a href="" class="">Datenschutz</a></li>
+						</ul>
+	   				</footer>
+
+	</div>
+
+	
+
+
+
+</body>
+</html>
